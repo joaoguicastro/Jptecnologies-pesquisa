@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci a senha</title>
+    <link rel="stylesheet" href="senha.css">
+    <link rel="icon" href="../imagens/transferir.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <div class="container">
+    <h1>Confirme sua senha</h1>  
+    
+    <input type="password" id="minhasenha1" placeholder="Nova Senha" required>
+
+    <input type="password" id="minhasenha2" placeholder="Confirme a Senha" required>
+    
+    <div class="mostrar">
+        <label for=""><input type="checkbox" onclick="mostrar1(),mostrar2()">Mostrar senha</label>
+    </div>
+
+    <a href="../login/login.html"><button>Confirmar</button></a>
+
+    </div>
+    <script src="senha.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+

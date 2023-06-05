@@ -1,0 +1,14 @@
+[
+    {
+        "title": "1ª Pergunta",
+        "description": "Como você avalia a qualidade dos serviços prestados pelo sistema de saúde?"
+    },
+    {
+        "title": "2ª Pergunta",
+        "description": "Como você classifica a eficiência e agilidade no atendimento médico?"
+    },
+    {
+        "title": "3ª Pergunta",
+        "description": "Como você avalia a limpeza e higiene das instalações do sistema de saúde?"
+    }
+]

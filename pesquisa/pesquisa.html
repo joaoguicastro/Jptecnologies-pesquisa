@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de satisfaçao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="pesquisa.css">
+    <link rel="icon" href="../imagens/transferir.png">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">:
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+              <div class="title">Pesquisa de satisfação</div>
+              <div class="description">Abaixo você irá começar sua pesquisa de satisfação sao apenas 3 perguntas rapidas.</div>
+            </div>
+            <button id="btnSubmit" onclick="changeContent()">Iniciar</button>
+            <div id="ratingContainer" class="hidden">
+              <div class="star-widget">
+                <input type="radio" name="rate" id="rate-5">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1">
+                <label for="rate-1" class="fas fa-star"></label>
+                <form action="#" id="feedbackForm">
+                  <header></header>
+                  <div class="textarea">
+                    <textarea id="userFeedback" cols="30" placeholder="Fale um pouco sobre sua experiencia..."></textarea>
+                  </div>
+                </form>
+              </div>
+              <span id="rating-value"></span>
+            </div>      
+        </div>
+    </div>
+    <script src="pesquisa.js"></script>
+</body>
+</html>

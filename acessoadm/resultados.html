@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resultados.css">
+    <link rel="icon" href="../imagens/transferir.png">
+    <style>@import 'https://fonts.googleapis.com/css2?family=Poppins&display=swap';</style>
+    <title>Resultados das Pesquisas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../imagens/jp-logo.png" alt="Logo Empresa">
+            <div class="botao">
+                <a href="../acessoadm/criacao.html" class="links" id="perguntas">Criação de Perguntas</a>
+                <a href="../acessoadm/resultados.html" class="links" id="resultados">Resultados das Pesquisas</a>
+                <a href="https://api.whatsapp.com/send?phone=5585991226011&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20o%20suporte%20da%20JPtechnologies" class="links" id="suporte" target="_blank">Suporte</a>
+                <a href="../principaladm/principaladm.html" class="links" id="acesso">Principal</a>
+                <a href="../login/login.html" class="links" id="sair"><button>Sair</button></a>
+            </div>
+        </div>
+        <div class="corpo">
+            <div class="contador-container">
+                <div class="contador-item">
+                    <h3>Péssimo</h3>
+                    <span id="contadorPessimo"></span>
+                </div>
+                <div class="contador-item">
+                    <h3>Ruim</h3>
+                    <span id="contadorRuim"></span>
+                </div>
+                <div class="contador-item">
+                    <h3>Bom</h3>
+                    <span id="contadorBom"></span>
+                </div>
+                <div class="contador-item">
+                    <h3>Muito Bom</h3>
+                    <span id="contadorMuitoBom"></span>
+                </div>
+                <div class="contador-item">
+                    <h3>Excelente</h3>
+                    <span id="contadorExcelente"></span>
+                </div>
+            </div>
+            <div class="grafico-container">
+                <canvas id="pesquisaGrafico"></canvas>
+            </div>
+        </div>
+        <div class="corpo2">
+            <h2 id="usuarioNome"></h2>
+            <p id="usuarioTexto"></p>
+            <h3>Média das perguntas:</h3>
+            <ul id="mediaPerguntas"></ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="resultados.js"></script>
+</body>
+</html>

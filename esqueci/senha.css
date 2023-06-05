@@ -1,0 +1,83 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    margin-bottom: 40px;
+}
+
+body{
+    background-color: #87CEFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-image: url(../imagens/jp_background.png);
+    background-repeat: no-repeat;
+    background-position: 80px 50%;
+    background-size: 400px;
+}
+
+.container{
+    background-color: #D3D3D3;
+    box-sizing: border-box;
+    width: 60vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid #696969;
+    box-shadow: 5px 5px 10px black;
+}
+
+input {
+    width: 40%;
+    height: 30px;
+    display: block;
+    border-radius: 10px;
+    outline: none;
+    position: center;
+    margin-bottom: 25px;
+}
+
+.container a button{
+    position: center;
+    font-size: 18px;
+    background-color: white;
+    font-weight: 600;
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: 2px solid black;
+
+    transition: transform 0.3s ease;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+/* Adicione estas regras para corrigir o alinhamento do checkbox e do texto */
+.mostrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mostrar label {
+    display: flex;
+    align-items: center;
+}
+
+.mostrar label input[type='checkbox'] {
+    margin-right: 5px;
+}
